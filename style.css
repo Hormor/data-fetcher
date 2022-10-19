@@ -12,6 +12,9 @@ body {
     text-align: center;
     font-family: 'Inter', sans-serif;
     padding: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -48,9 +51,24 @@ p {
 .btn {
     background-color: #d77100;
     color: #ffffff;
-    width: 400px;
+    width: 100%;
     border-radius: 15px;
     padding: 15px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
 }
